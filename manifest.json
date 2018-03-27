@@ -1,0 +1,26 @@
+{
+
+  "manifest_version": 2,
+  "name": "Play Next Youtube",
+  "version": "1.0",
+
+  "description": "Have already decided which youtube which youtube video to watch next from the youtube suggestions? Just add it to the play next plugin.",
+
+  "icons": {
+    "48": "icons/icon-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["play-next-yt.js"]
+    }
+  ],
+
+  "applications": {
+      "gecko": {
+         "id": "vibhas777@gmail.com"
+      }
+   }
+
+}
